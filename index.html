@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Access Invite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="screen">
+    <section class="card" id="access-card">
+      <p class="eyebrow">exclusive invite</p>
+      <h1>Secret Access</h1>
+      <p class="lead">
+        Len vybraní hostia odomknú vstup na birthday mission.
+      </p>
+
+      <div class="code-panel">
+        <label for="access-code">Vlož access code</label>
+        <input id="access-code" type="password" placeholder="napr. BDAY22">
+        <button id="unlock-btn">Odomknúť pozvánku</button>
+        <p class="hint">Skús kód: <strong>PARTY22</strong></p>
+        <p class="message" id="message"></p>
+      </div>
+    </section>
+
+    <section class="card invite hidden" id="invite-card">
+      <p class="eyebrow">access granted</p>
+      <h2>Si pozvaná/pozvaný na moju narodeninovú oslavu</h2>
+      <p class="date">22.03. o 19:00</p>
+
+      <div class="invite-grid">
+        <div>
+          <span class="label">Miesto</span>
+          <p>Doplníš podľa seba</p>
+        </div>
+        <div>
+          <span class="label">Dress code</span>
+          <p>Secret glam / party vibe</p>
+        </div>
+        <div>
+          <span class="label">Misia</span>
+          <p>Prísť, osláviť, vytvoriť chaos a spomienky</p>
+        </div>
+        <div>
+          <span class="label">RSVP</span>
+          <p>Napr. cez správu na Instagrame alebo WhatsAppe</p>
+        </div>
+      </div>
+
+      <p class="footer-note">
+        Toto je len základ. Texty, farby, čas aj miesto si vieš ľahko prepísať.
+      </p>
+
+      <button id="reset-btn" class="secondary">Zamknúť späť</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
